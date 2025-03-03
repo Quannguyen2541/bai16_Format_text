@@ -35,5 +35,12 @@ namespace bai16_Format_text
             lblInfo.Text = "Họ và tên thí sinh: " + ten + Environment.NewLine;
             lblInfo.Text += "Ngày viết chương trình: " + System.DateTime.Now;
         }
+
+        private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 ab = new AboutBox1();
+            ab.MdiParent = this;
+            ab.Show();
+        }
     }
 }
